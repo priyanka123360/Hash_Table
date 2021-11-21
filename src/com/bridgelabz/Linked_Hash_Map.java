@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 import java.util.ArrayList;
 
-public class Linked_Hash_Map<K,V> {
+public class Linked_Hash_Map<K, V> {
 	private final int numberOfBucket;
 	ArrayList<My_LinkedList<K>> arrayList;
 
@@ -51,9 +51,21 @@ public class Linked_Hash_Map<K,V> {
 		}
 	}
 
+	public boolean remove(K key) {
+
+		int index = this.getBucketNumber(key);
+		My_LinkedList<K> linkedList = this.arrayList.get(index);
+
+		My_Map_Node<K, V> myMapNode = (My_Map_Node<K, V>) linkedList.search(key);
+
+		linkedList.remove(key);
+		arrayList.remove(index);
+		return true;
+	}
+
 	@Override
 	public String toString() {
 		return "LinkedHashMap [arrayList=" + arrayList + "]";
 
-}
 	}
+}

@@ -20,6 +20,11 @@ public class Hash_Table_Main {
 			linked_Hash_Map.put(word, value);
 		}
 		System.out.println(linked_Hash_Map);
+		linked_Hash_Map.remove("avoidable");
+		System.out.println(linked_Hash_Map.get("avoidable"));
+		linked_Hash_Map.remove("paranoid");
+		System.out.println(linked_Hash_Map.get("paranoid"));
+
 	}
 
 }
