@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 public class Hash_Table_Main {
 	public static void main(String[] args) {
-		String string = "To be or not to be";
+		String string = "“Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
 		String[] words = string.split(" ");
 
 		Linked_Hash_Map linked_Hash_Map = new Linked_Hash_Map();
